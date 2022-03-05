@@ -30,6 +30,15 @@ p {
   margin: 0;
   padding: 0;
 }
+ol {
+  padding-left: 0px;
+  margin: 0px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .link {
   list-style: none;
 }
@@ -157,6 +166,7 @@ p {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-color);
+  font-size: 44px;
   text-align: center;
 }
 .hero-title {
@@ -175,6 +185,7 @@ p {
   align-items: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: none;
   color: var(--white-color);
   background-color: var(--blue-color);
   cursor: pointer;
@@ -205,6 +216,7 @@ p {
 }
 
 .about-title {
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
@@ -220,8 +232,8 @@ p {
   padding-top: 0px;
 }
 .box-hero {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  /* margin-top: 0px;
+  margin-bottom: 0px; */
 
   font-weight: bold;
   font-size: 36px;
@@ -344,15 +356,14 @@ p {
   flex-wrap: wrap;
   padding-inline-start: 0pt;
   margin-bottom: 0px;
-  margin-top: 34px;
+  margin-top: 50px;
 }
 .portfolio-box-list {
-  width: 370px;
+  /* width: 370px; */
   margin-top: 0px;
   margin-right: 30px;
   margin-left: 0px;
   margin-bottom: 30px;
-  border: 1px solid var(--portfolio--bord-color);
 
   background-color: var(--white-color);
 }
@@ -367,6 +378,8 @@ p {
   border: none;
 }
 .portfolio-btn-item {
+  padding: 6px 22px;
+
   font-family: roboto;
   font-style: normal;
   font-weight: 500;
@@ -379,18 +392,28 @@ p {
 }
 
 .portfolio-box-name {
-  margin-top: 20px;
-  margin-left: 24px;
+  /* margin-top: 20px;
+  margin-left: 24px; */
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--style-color);
 }
+.portfolio-box-cart {
+  border-right: 1px solid var(--portfolio--bord-color);
+  border-bottom: 1px solid var(--portfolio--bord-color);
+  border-left: 1px solid var(--portfolio--bord-color);
+
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
 .portfolio-box-title {
   margin-top: 4px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  /* margin-bottom: 20px;
+  margin-left: 24px; */
   font-size: 16px;
   line-height: 1.87;
   color: var(--brend-color);
@@ -398,16 +421,18 @@ p {
 
 /*подвал*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--hero-color);
   /* border: solid var(--footer-bord-color); */
 }
 .footer-main {
-  padding-top: 60px;
   /* padding-left: 0px;
   padding-right: 0px; */
 }
 .logo-footer {
-  padding-left: 0px;
+  /* padding-left: 0px; */
 
   font-family: raleway;
   font-style: normal;
@@ -427,7 +452,6 @@ p {
   margin-bottom: 0px;
   margin-left: 0px;
   padding-left: 0px;
-  padding-bottom: 60px;
 }
 .contact-local {
   font-style: normal;
@@ -437,6 +461,7 @@ p {
 }
 .contact-mail,
 .contact-tel {
+  margin-top: 9px;
   font-style: normal;
   line-height: 1.71;
   color: var(--phone-color);
